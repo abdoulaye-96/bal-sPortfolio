@@ -1335,6 +1335,30 @@
         right: -6px;
       }
     }
+
+    /* ── Switcher Langue (EN/FR) ── */
+    .lang-btn {
+      margin-left: 20px;
+      padding: 0.4em 1.2em;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff !important;
+      border-radius: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(183, 75, 75, 0.4);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .lang-btn:hover {
+      box-shadow: 0 6px 20px rgba(183, 75, 75, 0.6);
+      transform: translateY(-2px);
+    }
+    
+    .lang-btn::after {
+      content: none !important;
+    }
   </style>
 </head>
 
@@ -1351,7 +1375,7 @@
       <a href="#projects" class="nav-link">Projets</a>
       <a href="#testimonials" class="nav-link">Témoignages</a>
       <a href="#contact" class="nav-link">Contact</a>
-      <a href="en.html" style="margin-left:20px;">EN</a>
+      <a href="en.html" class="lang-btn">EN</a>
     </nav>
     <div class="menu-toggle" id="menu-toggle">
       <span></span><span></span><span></span>
